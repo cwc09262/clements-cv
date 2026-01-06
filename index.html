@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CV with Scroll-Spy Navigation</title>
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <h1>Caden William Clements</h1>
+
+                <p>
+                    <a href="mailto:cwc09262@gmail.com">cwc09262@gmail.com</a><br>
+                    <a href="tel:+4846519363">(484) 651-9363</a>
+                </p>
+
+                <p>
+                    <a href="https://www.linkedin.com/in/caden-c-3ba232139/">LinkedIn</a> | <a
+                        href="https://github.com/yourusername" target="_blank">Github</a><br>
+                    Villanova, PA 19085
+                </p>
+
+                <p>
+                    Aspiring Natural Language Processing Academic with a strong foundation in cybersecurity and applied
+                    machine learning.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="Education">
+            <h2>Education</h2>
+            <div id="villanova">
+                <item>
+                    <span>Villanova University</span>
+                    <span>Villanova, Pennsylvania</span>
+                </item>
+                <item>
+                    <span>M.S. in Computer Science</span>
+                    <span>August 2025 - Present</span>
+                </item>
+                <ul>
+                    <li>Graudaute Assistant</li>
+                </ul>
+            </div>
+
+            <div id="eastern">
+
+                <item>
+                    <span>Eastern University</span>
+                    <span>St. Davids, Pennsylvania</span>
+                </item>
+                <item>
+                    <span>Bachelor of Science in Computer Science & Data Sceince</span>
+                    <span>2019 – 2023</span>
+                </item>
+
+            </div>
+            <h3>Oxford Univerity</h3>
+            <ul>
+                <li>Completed an Oxford Style tutorial on the teachings and theology of C.S. Lewis.</li>
+                <li>Completed an Oxford Style tutorial on the principles of programming languages.</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>Schools attended...</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Programming languages, tools, etc...</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>How to reach me...</p>
+        </section>
+    </main>
+
+    <script>
+        // Scroll spy logic
+        const sections = document.querySelectorAll('main section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - sectionHeight / 3) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

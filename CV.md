@@ -1,0 +1,161 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{needspace} 
+
+% Custom section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titleformat{\subsection}
+  {\centering\bfseries\large} % centered + bold + large
+  {} % no label
+  {0em} % no indent
+  {\underline} % underline the title text itself
+
+
+
+
+% Name and contact info
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Caden William Clements}}\\
+    \href{mailto:cwc09262@gmail.com}{cwc09262@gmail.com} \\
+    (484) 651 - 9363 \\
+    \href{https://main.d2ugd62ymj09qk.amplifyapp.com}{Portfolio Website} \textbar{} \href{https://github.com/cwc09262}{Github} \\
+    Villanova, PA 19085 \\
+   
+    \textit{Aspiring Natural Language Processing Academic with a strong foundation in cybersecurity and applied machine learning. }
+\end{center}
+
+% Education
+\section*{Education}
+\textbf{Villanova University} - \textit{(In Progress)} \hfill Villanova, Pennsylvania \\
+M.S in Computer Science \hfill August 2025 - \textit{Current} \\
+GPA: \textit{TBD}
+
+\textbf{Oxford Study Aborad Program (OSAP)} \hfill Oxford, United Kingdom \\
+Oxford Study Abroad Student \hfill Fall 2024 
+
+\begin{itemize}[noitemsep]
+    \item Completed an Oxford Style tutorial on the teachings and theology of C.S. Lewis.
+    \item Completed an Oxford Style tutorial on the principles of programming languages.
+\end{itemize}
+
+\textbf{Eastern University} \hfill St. Davids, Pennsylvania \\
+B.S. in Computer Science \& Data Science with Minor in History\hfill August 2021 -- 
+May 2025 \\
+GPA: 3.6 / 4.00 \hfill Dean's List Student
+\section*{Coursework}
+Machine Learning, Natural Language Processing, Cryptography, Programming Languages, Data Science Research Methods, Algorithms, Computer Graphics
+
+% Research
+\section{Research}
+
+\subsection*{Theoretical} 
+\textbf{Computational Semantics of the Psalms} \hfill Villanova University - Fall 2025 to Present
+\begin{itemize}[noitemsep]
+    \item Applied a combination of contextual transformers and traditional statistical text-embedding methods—BERT, SBERT, TF-IDF, and TF-IDF scaled by GLoVe vectors—to explore techniques for extracting semantic meaning and translation differences within the Psalms.
+    \item All ongoing and future work can be found \href{https://github.com/cwc09262/psalms-nlp-research}{here}.
+\end{itemize}
+
+\textbf{Research Symposium Presentation} \hfill Eastern University - April 2025
+\begin{itemize}[noitemsep]
+    \item Presented research on machine learning models analyzing translation purposes across different versions of the Psalter and the Orthodox Christian Book of Psalms.
+    \item Studied the Principal Component Analysis (PCA) of TF-IDF matrices to visualize semantic differences between translations.
+\end{itemize}
+
+
+\subsection*{Applied - Practical}
+\textbf{Cyber Security Intern} -- United States Coast Guard \hfill Staten Island, New York \\
+\textit{May 2023 -- July 2023} \hfill Internship
+\begin{itemize}[noitemsep]
+    \item Researched maritime cyber hygiene and simulated a cyber attack with Brendan Dolan.
+    \item Enhanced New York Harbor cybersecurity protocols and developed a cyber outreach website.
+\end{itemize}
+
+
+% Teaching
+\section{Teaching}
+
+
+\textbf{Teaching Assistant} \hfill Eastern University - \textit{Multiple Semesters} \\
+Computer Science \& Data Science
+\begin{itemize}[noitemsep]
+	\item Held Office Hours
+	\item Assisted in lectures, created assignments, and graded them
+	\item Built automatic graders for assignments
+\end{itemize}
+
+\textbf{Teaching Assistant} \hfill Eastern University - \textit{One Semester} \\
+History\\
+
+
+
+% Industry
+\section*{Industry}
+\textbf{Computer Science Intern} -- United States Coast Guard \hfill Staten Island, New York 
+\textit{June 2025  --August 2025} \hfill Internship 
+\begin{itemize}[noitemsep]
+    \item Collaborated with staff to improve a cyber outreach tool for the maritime industry.
+    \item Researched cargo movement within the port and assessed key risks to operations.
+    \item Input data into an existing dashboard to help trace petrochemical supply chains.
+    \item Analyzed terminal dependencies, including cargo blending and pipeline operations.
+    \item Learned to engage port partners effectively and document workflow processes.
+    \item Developed skills in maintaining cybersecurity standards within maritime operations.
+\end{itemize} 
+\needspace{5\baselineskip}
+\textbf{Cyber \& Website Intern} -- United States Coast Guard \hfill Staten Island, New York \\
+\textit{June 2024 -- August 2024} \hfill Internship
+\begin{itemize}[noitemsep]
+    \item Built website for Vessel Agents to use that covers every different problem they may have.
+	\item Rebuild Cyber Outreach tool with better information and personally designed graphics
+\end{itemize} \
+
+% Projects
+\section*{Projects}
+\href{https://github.com/cwc09262/st_david-s-beacon}{\textbf{Saint David's Beacon}} \hfill \textit{Spring 2025}
+\begin{itemize}[noitemsep]
+    \item Studied and applied mathematical foundations of machine learning.    
+    \begin{itemize}[label=--]
+        \item Term Frequency–Inverse Document Frequency, Principal Component Analysis, Cosine Similarity
+    \end{itemize}
+    \item Built a custom data pipeline to clean and structure text from multiple translations of the Psalms.
+    \item Trained and evaluated transformer-based models (e.g., all-mpnet-base-v2) to generate embeddings for similarity search.
+    \item Deployed the search engine as a Flask web application for interactive querying and visualization of results.
+\end{itemize}
+\href{https://cwc09262.github.io/Astronomy_Observation_NoteBook/}{\textbf{Astronomy Observations Website}} \hfill Spring 2024
+\begin{itemize}
+    \item At the end of taking observation for an astronomy lab, I was tasked with building a compiled notebook for submission. I choose to build a website for my submission. 
+\end{itemize}
+\textbf{API Behavior Machine Learning Model} \hfill Fall 2023
+\begin{itemize}[noitemsep]
+    \item Focused on cleaning API behavior data in my first machine learning project.
+    \item Built a simple model and gained initial exposure to the ML pipeline.
+\end{itemize}
+
+\textbf{Coffee Bean Analytics} \hfill Spring 2023 
+\begin{itemize}[noitemsep]
+	\item Conducted a thorough analysis of a coffee bean dataset, exploring the impact of variables such as altitude, processing method, variety, and region/country on coffee quality, resulting in a detailed project report and presentation.
+\end{itemize}
+% Skills
+\section*{Skills}
+\begin{tabular}{ll}
+    Programming: & Python, Java, C++, HTML/CSS, JavaScript, R \\
+    Tools: & Git, Docker, LaTeX, VS Code, Linux, R Studio, Jupyter Notebooks\\
+    Languages: & English (fluent)
+\end{tabular}
+
+\section*{Awards \& Honors}
+\begin{tabular}{p{0.65\textwidth} r}
+    \textbf{Certificate of Merit} -- United States Coast Guard & Aug 2025 \\
+    \textbf{Heroic Endeavor Award} -- Eastern University & May 2025 \\
+    \textbf{Certificate of Merit} -- United States Coast Guard & Aug 2024 \\
+    \textbf{Sigma Zeta Honor Society} -- Eastern University & Apr 2023 -- May 2025 \\
+    \textbf{Eagle Scout} -- Troop 241, Knauers, PA & Oct 2018 \\
+\end{tabular}
+
+
+\end{document}
